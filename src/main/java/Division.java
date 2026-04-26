@@ -2,17 +2,17 @@
  * Simple class to do a division between two numbers
  */
 public class Division {
-    private double firstNumber;
-    private double secondNumber;
+    private double dividend;
+    private double divisor;
 
     /**
      *
-     * @param firstNumber the dividend of the division
-     * @param secondNumber the divisor of the division
+     * @param dividend the dividend of the division
+     * @param divisor the divisor of the division
      */
-    public Division(double firstNumber, double secondNumber) {
-        this.firstNumber = firstNumber;
-        this.secondNumber = secondNumber;
+    public Division(double dividend, double divisor) {
+        this.dividend = dividend;
+        this.divisor = divisor;
     }
 
     /**
@@ -20,8 +20,8 @@ public class Division {
      * @return the quotient of the division
      */
     public double doDivision() {
-        if (secondNumber != 0) {
-            return firstNumber / secondNumber;
+        if (divisor != 0) {
+            return dividend / divisor;
         } else {
             throw new ArithmeticException("Division by zero");
         }
