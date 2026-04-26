@@ -5,7 +5,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 
 public class DivisionTest {
     @Test
-    void TestDivision() {
+    void testDivision() {
         double dividend = 10.0;
         double divisor = 2.0;
         Division division = new Division(dividend, divisor);
@@ -13,7 +13,7 @@ public class DivisionTest {
     }
     
     @Test
-    void TestDivisionByZero() {
+    void testDivisionByZero() {
         double dividend = 10.0;
         double divisor = 0.0;
         Division division = new Division(dividend, divisor);
