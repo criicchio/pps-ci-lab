@@ -1,3 +1,3 @@
 class DivisionScala:
-  def divide(a: Float, b: Float): Float =
+  def divide(a: Double, b: Double): Double =
     Division(a, b).doDivision()
